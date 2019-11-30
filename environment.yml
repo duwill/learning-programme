@@ -1,0 +1,6 @@
+name: yangba
+channels:
+  - cogsci
+dependencies:
+  - python=3.5
+  - pygame
