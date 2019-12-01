@@ -94,7 +94,7 @@ def realTime():
 
     t.tracer(True)
     print(curr_second)
-    t.ontimer(realTime, 100)  # 每隔100毫秒调用一次realTime()
+    t.ontimer(realTime, 1000)  # 每隔1000毫秒调用一次realTime()
 
 
 def main():
