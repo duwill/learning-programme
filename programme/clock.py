@@ -17,23 +17,12 @@ def drawClock(radius):  # 画表盘
     for j in range(60):
         skip(radius)
         if (j % 5 == 0):
-            # t.color("red") if(j % 15 == 0) else t.color("black")
-            if(j % 15 == 0):
-                t.color("red")
-            else:
-                t.color("black")
             t.forward(20)
             skip(-radius - 20)
-            # t.dot(5)
-            # skip(-radius)
         else:
-            t.color("black")
-            # t.forward(20)
-            # skip(-radius - 20)
             t.dot(5)
             skip(-radius)
         t.right(6)
-
 
 def makePoint(pointName, len):  # 钟的指针，时针、分针、秒针
     t.penup()
@@ -109,11 +98,11 @@ def realTime():
 
 def main():
     t.tracer(False)
-    drawClock(160)
-    drawPoint()
-    realTime()
+    # drawClock(160)
+    # drawPoint()
+    # realTime()
     t.tracer(True)
-    t.mainloop()
+    # t.mainloop()
 
 
 if __name__ == '__main__':
